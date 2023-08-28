@@ -1,0 +1,31 @@
+<h2  class="mt-1">Register</h2>
+<hr>
+<section class="alert alert-light">
+    <form class="mx-auto" id="registerForm" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="15px" ngForm #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+            <input class="input-group-text mx-auto" type="text" matInput placeholder="Name" ngModel name="name" required
+                #nameInput="ngModel">
+            <input class="input-group-text mx-auto" type="text" matInput placeholder="Surname" ngModel name="surname" required
+                #surnameInput="ngModel">
+            <input class="input-group-text mx-auto" type="text" matInput placeholder="Telephone" ngModel name="telephone" required
+                #telephoneInput="ngModel">
+            <input class="input-group-text mx-auto" type="text" matInput placeholder="Address" ngModel name="address" required
+                #addressInput="ngModel">
+            <input class="input-group-text mx-auto" type="text" matInput placeholder="Favorite genre" ngModel name="favorites" required
+                #favoritesInput="ngModel">
+            <input class="input-group-text mx-auto" type="text" matInput placeholder="Username" ngModel name="username" required
+                #usernameInput="ngModel">
+            <mat-icon class="mx-auto lock" fontIcon="lock"></mat-icon>
+            <input class="input-group-text mx-auto" type="email" matInput placeholder="Email" ngModel name="email" email required
+                #emailInput="ngModel">
+            <input class="input-group-text mx-auto" type="password" matInput placeholder="Password" ngModel name="password" required minlength="8"
+                #passInput="ngModel">
+           
+        
+        <button id="registerBtn" class="btn btn-primary mx-auto" type="submit" mat-raised-button color="primary">Register</button>
+        
+    </form>
+    <a id="signInBtn" class=" alert-link" routerLink="/login">Have an account? Sign in here!</a>
+</section>
+        
+    

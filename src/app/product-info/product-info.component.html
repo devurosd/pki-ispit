@@ -1,0 +1,16 @@
+<h2>Product details</h2>
+<hr>
+
+<div>
+    <h3>Title: {{ product.name }}</h3>
+    <img src={{product.pictureUrl}} class="w-20 img-thumbnail rounded" style="float: right; width: 150px;"/>
+    <h4>{{ product.price | currency: 'RSD ' }}</h4>
+    <p>Genre: {{ product.genre }}</p>
+    <p>Pages: {{ product.numberOfPages }}</p>
+    <p>Publisher: {{ product.publisher }}</p>
+    <p>Publish Date: {{ product.publishDate }}</p>
+    <p>Rating: {{ product.revRate }}</p>
+    
+    <button class="btn btn-primary" (click)="addToCart()">Add to cart</button>
+
+</div>

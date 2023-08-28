@@ -1,0 +1,20 @@
+<h2  class="mt-1">Products</h2>
+<hr>
+<div>
+    <div>
+        <input type="input" class="form-control" id="search-text" [(ngModel)]="searchText" placeholder="Search by title...">
+    </div>
+
+    <br/>
+    
+    <div class="d-flex  justify-content-md-center flex-wrap row ">
+        <div *ngFor="let product of products | appFilter: searchText" class="col-10 col-md-2 m-3">
+    
+            <img src={{product.pictureUrl}} class="w-50 img-thumbnail rounded mx-left">
+            <h4 style="height:90px">{{ product.name }}</h4>
+            <p>{{ product.price | currency: ' ' }} RSD</p>
+            <a class="btn btn-primary" [routerLink]="['/products', product.productId]">See details</a>
+    
+        </div>
+    </div>
+</div>

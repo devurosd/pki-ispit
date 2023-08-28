@@ -1,0 +1,17 @@
+#loginForm{
+    display: block;
+    width: 300px;
+}
+
+#loginBtn{
+    display: block;
+    width: 100px;
+}
+
+input{
+    margin-bottom: 5px;
+}
+
+a:hover{
+    color: red;
+}

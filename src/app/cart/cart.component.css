@@ -1,0 +1,31 @@
+.backBtn{
+    display: block;
+    float: inline-start;
+    margin-top: 15px;
+}
+
+#deleteBtn{
+    color: white;
+    font-weight: bold;
+}
+
+#buyBtn{
+    font-weight: bold;
+    color: white;
+    float: inline-end;
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+
+h2{
+    display:block;
+    width: 200px;
+    margin-top: 15px;
+}
+
+.miniIcons{
+    width: auto;
+    height: 100%;
+    display: block;
+    float: inline-start;
+}

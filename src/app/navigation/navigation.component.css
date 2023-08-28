@@ -1,0 +1,26 @@
+a{
+    color: white;
+}
+
+a:hover{
+    color: rgb(242, 6, 6);
+}
+
+h1{
+    color: aliceblue;
+}
+
+#pageTitle{
+    display: block;
+    font-weight: 300;
+}
+
+.miniIcons{
+    width: auto;
+    height: 100%;
+    display: block;
+    float: inline-start;
+}
+
+
+

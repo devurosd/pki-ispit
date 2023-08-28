@@ -1,0 +1,21 @@
+<a class="backBtn" [routerLink]="['/']"><button class="btn btn-outline-primary"><mat-icon class="miniIcons" fontIcon="arrow_back"></mat-icon>Add more</button></a>
+<h2 class="mx-auto">Checkout</h2>
+<hr>
+
+<div *ngIf="items.length > 0; else noItems">
+    <p>Your current cart includes these items:</p>
+    <div class="alert alert-info" *ngFor="let product of items">
+        <h4>{{ product.name}}</h4>
+        <hr>
+        <h6>{{ product.price | currency: 'RSD '}}</h6>
+    </div>
+
+    <h4 class="text-end">Total price: {{ items | sum | currency: 'RSD ' }}</h4>
+</div>
+
+<button id="deleteBtn" class="btn btn-danger" (click)="deleteAllFromCart()" *ngIf="items.length > 0">Clear cart</button>
+<button id="buyBtn" class="btn btn-success" (click)="buyFromCart()" *ngIf="items.length > 0">Buy</button>
+
+<ng-template #noItems>
+    <p>This cart is empty</p>
+</ng-template>
